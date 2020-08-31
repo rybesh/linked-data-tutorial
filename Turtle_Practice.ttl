@@ -1,0 +1,49 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <http://example.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbr:Jacques_Lacan ex: be against ex: Anglo-American ego psychology;
+                  dbo:influencedBy dbr: Sigmund Freud,
+                                   dbr: Ferdinand de Saussure,
+                                   dbr: Claude Lévi-Strauss.
+
+ex: Lacanian psychoanalysis dbo: influencedBy dbr: Structuralism
+
+wikidata: ego ex: crystallize ex: desire of the Other;
+              ex: duringTime dbr: Mirror_stage .
+
+ex: the Thing rdfs: label "das Ding" @de, "la chose" @fr .
+              ex: understood ex: mother in the Real Order;
+              ex: embody ex: jouissance .
+
+ex: three orders ex: include ex: the Imaginary,
+                             wikidata: the Symbolic,
+                             ex: the Real .
+
+wikidata: the Symbolic rdfs: label "the big Other";
+                       ex: byMeansOf ex: name-of-the-father;
+                       ex: cause ex: socialization;
+                       ex: direct ex: desire(psychoanalysis);
+                       ex: basedOn [dbo: influencedBy ex: signifier;
+                                    ex: proposedBy dbr: Ferdinand de Saussure .] .
+
+ex: the Imaginary order ex: foundation [ex: formation wikidata: ego;
+                                        ex: duringTime dbr: Mirror_stage .] .
+
+ex: jouissance ex:causedBy dbr: Libido;
+               rdfs: label "drive satisfaction" .
+
+ex: death drive ex: beyond ex: Pleasure Principle;
+                ex: origin ex: jouissance .
+
+ex: drive(psychoanalysis) ex: include ex: death drive;
+                          ex: disrupt wikidata: the Symbolic .
+
+ex: desire(psychoanalysis) ex: substitute ex: drive(psychoanalysis) .
+
+ex: objet petit a ex: duringTime ex: socialization;
+                  ex: causedBy wikidata: Symbolic;
+                  ex: cause ex: desire(psychoanalysis);
+                  ex: residue ex: the Thing .
