@@ -4,46 +4,71 @@
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-dbr:Jacques_Lacan ex: be against ex: Anglo-American ego psychology;
-                  dbo:influencedBy dbr: Sigmund Freud,
-                                   dbr: Ferdinand de Saussure,
-                                   dbr: Claude Lévi-Strauss.
+dbr:Jacques_Lacan
+  ex:beAgainst ex:Anglo_American_ego_psychology ;
+  dbo:influencedBy
+    dbr:Sigmund_Freud ,
+    dbr:Ferdinand_de_Saussure ,
+    dbr:Claude_Lévi_Strauss
+  .
 
-ex: Lacanian psychoanalysis dbo: influencedBy dbr: Structuralism
+ex:Lacanian_psychoanalysis dbo:influencedBy dbr:Structuralism .
 
-wikidata: ego ex: crystallize ex: desire of the Other;
-              ex: duringTime dbr: Mirror_stage .
+wikidata:ego
+  ex:crystallize ex:desire_of_the_Other ;
+  ex:duringTime dbr:Mirror_stage
+  .
 
-ex: the Thing rdfs: label "das Ding" @de, "la chose" @fr .
-              ex: understood ex: mother in the Real Order;
-              ex: embody ex: jouissance .
+ex:the_Thing
+  rdfs:label "das Ding"@de, "la chose"@fr ;
+  ex:understood ex:mother_in_the_Real_Order ;
+  ex:embody ex:jouissance
+  .
 
-ex: three orders ex: include ex: the Imaginary,
-                             wikidata: the Symbolic,
-                             ex: the Real .
+ex:three_orders ex:include
+  ex:the_Imaginary ,
+  wikidata:the_Symbolic ,
+  ex:the_Real
+  .
 
-wikidata: the Symbolic rdfs: label "the big Other";
-                       ex: byMeansOf ex: name-of-the-father;
-                       ex: cause ex: socialization;
-                       ex: direct ex: desire(psychoanalysis);
-                       ex: basedOn [dbo: influencedBy ex: signifier;
-                                    ex: proposedBy dbr: Ferdinand de Saussure .] .
+wikidata:the_Symbolic
+  rdfs:label "the big Other" ;
+  ex:byMeansOf ex:name-of-the-father ;
+  ex:cause ex:socialization ;
+  ex:direct ex:desire_psychoanalysis ;
+  ex:basedOn [
+    dbo:influencedBy ex:signifier ;
+    ex:proposedBy dbr:Ferdinand_de_Saussure
+  ]
+  .
 
-ex: the Imaginary order ex: foundation [ex: formation wikidata: ego;
-                                        ex: duringTime dbr: Mirror_stage .] .
+ex:the_Imaginary
+  ex:foundation [
+    ex:formation wikidata:ego ;
+    ex:duringTime dbr:Mirror_stage
+  ]
+  .
 
-ex: jouissance ex:causedBy dbr: Libido;
-               rdfs: label "drive satisfaction" .
+ex:jouissance
+  ex:causedBy dbr:Libido ;
+  rdfs:label "drive satisfaction"
+  .
 
-ex: death drive ex: beyond ex: Pleasure Principle;
-                ex: origin ex: jouissance .
+ex:death_drive
+  ex:beyond ex:Pleasure_Principle ;
+  ex:origin ex:jouissance
+  .
 
-ex: drive(psychoanalysis) ex: include ex: death drive;
-                          ex: disrupt wikidata: the Symbolic .
+ex:drive_psychoanalysis
+  ex:include ex:death_drive ;
+  ex:disrupt wikidata:the_Symbolic
+  .
 
-ex: desire(psychoanalysis) ex: substitute ex: drive(psychoanalysis) .
+ex:desire_psychoanalysis ex:substitute ex:drive_psychoanalysis .
 
-ex: objet petit a ex: duringTime ex: socialization;
-                  ex: causedBy wikidata: Symbolic;
-                  ex: cause ex: desire(psychoanalysis);
-                  ex: residue ex: the Thing .
+ex:objet_petit_a
+  ex:duringTime ex:socialization ;
+  ex:causedBy wikidata:the_Symbolic ;
+  ex:cause ex:desire_psychoanalysis ;
+  ex:residue ex:the_Thing
+  .
